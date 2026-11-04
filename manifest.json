@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Umbra",
+  "version": "0.3.0",
+  "description": "Stops sites from tying your identities together",
+  "minimum_chrome_version": "116",
+  "permissions": [
+    "storage",
+    "scripting",
+    "tabs",
+    "privacy",
+    "declarativeNetRequest",
+    "browsingData"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "128": "icon.png"
+  },
+  "action": {
+    "default_title": "Umbra",
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  }
+}
